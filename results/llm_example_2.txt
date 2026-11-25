@@ -2,7 +2,7 @@
     Alert for device-07
 
     Risk:
-    The alert type is possible flood toward a host.
+    Based on the provided network alert, it is suspicious because the device is experiencing a high volume of incoming connections (7 network connections) and data transfers (1.2 packets per second) within a short period (60 seconds), which may indicate a potential flood of traffic towards a host. This activity is also likely to be suspicious because the classifier score is low (0.0), indicating that the alert is not a typical normal activity, and the anomaly score is also low (0.51), suggesting
 
     Actions:
     1. Check the device for unusual activity.

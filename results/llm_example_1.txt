@@ -2,9 +2,9 @@
     Alert for device-11
 
     Risk:
-    The alert type is repeated logins to a remote service, which is a clear indication of a potential security breach.
+    This activity may be suspicious because repeated logins to a remote service within a short period of time (60 seconds) could indicate a potential unauthorized access attempt, which is a common threat in the cybersecurity world. The high number of network connections (2029) and ports (1008) used, combined with the large number of destination IPs (6), suggests a significant amount of data being transferred, which could be indicative of malicious activity.
 
-In
+According to the National Institute of Standards and Technology (NIST),
 
     Actions:
     1. Check the device for unusual activity.

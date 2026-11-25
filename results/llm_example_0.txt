@@ -2,7 +2,12 @@
     Alert for device-06
 
     Risk:
-    The alert type is possible flood toward a host, which could lead to a denial of service attack.
+    Based on the provided network alert, it is suspicious because the high volume of network connections (44) and packets per second (4.5) may indicate a large-scale, potentially malicious activity, such as a flood of traffic towards a host. The classifier score of 0.0 and anomaly score of 0.15 also suggest that the activity is not unusual or expected, and may indicate a potential security threat.
+
+Statistics mentioned in the alert include:
+
+* 44 network connections (flows)
+*
 
     Actions:
     1. Check the device for unusual activity.
