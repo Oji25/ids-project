@@ -1,0 +1,11 @@
+weights: classifier=0.0 anomaly=0.0 rules=1.0
+thresholds: suspicious>=0.000  intrusion likely>=0.000
+
+Window-level results on test (intrusion likely only):
+precision=0.011  recall=1.000  false_alarm_rate=1.0000
+false alarms per hour (whole network): 1980.00
+test span: 36.0 hours
+
+Wrote 300 evidence records to results/evidence.jsonl
+{"window_seconds": 60, "verdict": "intrusion likely", "alert_type": "possible flood toward a host", "classifier_score": 0.0, "anomaly_score": 0.15, "source_device": "device-06", "source_is_internal": true, "flows_in_window": 44, "unique_destination_ports": 4, "unique_destination_ips": 10, "syn_packet_ratio": 0.0, "packets_per_second": 4.5, "top_destination_ports": [80, 22, 443, 53]}
+

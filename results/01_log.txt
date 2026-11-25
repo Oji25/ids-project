@@ -1,0 +1,32 @@
+data/raw/TrafficLabelling/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv: 225,745 rows, 86 columns
+data/raw/TrafficLabelling/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv: 286,467 rows, 86 columns
+data/raw/TrafficLabelling/Friday-WorkingHours-Morning.pcap_ISCX.csv: 191,033 rows, 86 columns
+data/raw/TrafficLabelling/Monday-WorkingHours.pcap_ISCX.csv: 529,918 rows, 86 columns
+data/raw/TrafficLabelling/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv: 288,602 rows, 86 columns
+data/raw/TrafficLabelling/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv: 458,968 rows, 86 columns
+data/raw/TrafficLabelling/Tuesday-WorkingHours.pcap_ISCX.csv: 445,909 rows, 86 columns
+data/raw/TrafficLabelling/Wednesday-workingHours.pcap_ISCX.csv: 692,703 rows, 86 columns
+dropped rows with NaN or inf: 291469
+dropped exact duplicate rows: 199
+unparseable timestamps: 529450
+
+Label counts:
+Label
+BENIGN                        1741672
+DoS Hulk                       230123
+PortScan                       158804
+DDoS                           128025
+DoS GoldenEye                   10293
+FTP-Patator                      7935
+SSH-Patator                      5897
+DoS slowloris                    5796
+DoS Slowhttptest                 5499
+Bot                              1956
+Web Attack  Brute Force         1507
+Web Attack  XSS                  652
+Infiltration                       36
+Web Attack  Sql Injection         21
+Heartbleed                         11
+Name: count, dtype: int64
+
+Saved 2,298,227 rows to data/processed/flows.parquet

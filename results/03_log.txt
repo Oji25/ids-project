@@ -1,0 +1,34 @@
+                                     min           max         mean
+Destination Port                     0.0  6.553300e+04      7469.03
+Flow Duration                      -13.0  1.200000e+08  15816084.69
+Total Fwd Packets                    1.0  2.079640e+05         9.13
+Total Backward Packets               0.0  2.846020e+05        10.15
+Total Length of Fwd Packets          0.0  1.290000e+07       553.81
+Total Length of Bwd Packets          0.0  6.270000e+08     15780.68
+Fwd Packet Length Mean               0.0  5.940860e+03        59.98
+Bwd Packet Length Mean               0.0  5.800500e+03       338.85
+Flow Bytes/s                -261000000.0  2.070000e+09   1463762.47
+Flow Packets/s                -2000000.0  4.000000e+06     71863.18
+Flow IAT Mean                      -13.0  1.200000e+08   1352732.61
+Flow IAT Std                         0.0  8.480000e+07   3240496.05
+Fwd IAT Mean                         0.0  1.200000e+08   2727124.35
+Bwd IAT Mean                         0.0  1.200000e+08   1805164.53
+FIN Flag Count                       0.0  1.000000e+00         0.04
+SYN Flag Count                       0.0  1.000000e+00         0.04
+RST Flag Count                       0.0  1.000000e+00         0.00
+PSH Flag Count                       0.0  1.000000e+00         0.31
+ACK Flag Count                       0.0  1.000000e+00         0.32
+Init_Win_bytes_forward              -1.0  6.553500e+04      6509.69
+Init_Win_bytes_backward             -1.0  6.553500e+04      1742.74
+Down/Up Ratio                        0.0  1.560000e+02         0.69
+Average Packet Size                  0.0  3.893330e+03       209.57
+src_flows                            1.0  4.436800e+04      4291.42
+src_unique_dst_ports                 1.0  1.894000e+03       125.83
+src_unique_dst_ips                   1.0  2.870000e+02        28.66
+src_syn_ratio                        0.0  1.000000e+00         0.04
+src_auth_flows                       0.0  1.790000e+02        10.85
+src_packets                          2.0  4.926130e+05     24221.59
+dst_flows                            1.0  4.438000e+04      4204.85
+dst_unique_src_ips                   1.0  1.370000e+02         6.83
+
+Saved 2,298,227 rows to data/processed/features.parquet

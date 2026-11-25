@@ -1,0 +1,147 @@
+STDOUT:
+Explain this network event in 2 sentences.
+
+Evidence:
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-06"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-08"}
+{"verdict": "intr
+PyTorchObserver {"prefill_token_per_sec":38.5338,"decode_token_per_sec":7.29758,"prompt_tokens":41,"generated_tokens":63,"model_load_start_ms":1795341300047,"model_load_end_ms":1795341304591,"inference_start_ms":1795341304591,"inference_end_ms":1795341314288,"model_execution_start_ms":1795341314165,"model_execution_end_ms":1795341314288,"prompt_eval_end_ms":1795341305655,"first_token_ms":1795341305655,"aggregate_sampling_time_ms":23,"aggregate_model_execution_time_ms":9665,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+
+STDERR:
+I tokenizers:regex.cpp:40] Registering override fallback regex
+I tokenizers:regex.cpp:40] Registering override fallback regex
+I 00:00:00.001364 executorch:main.cpp:158] Resetting threadpool with num threads = 0
+I 00:00:00.001421 executorch:runner.cpp:65] Creating LLaMa runner: model_path=/home/oj123/executorch/llama32_1b_8da4w.pte, tokenizer_path=/home/oj123/models/llama32-1b/original/tokenizer.model
+E tokenizers:hf_tokenizer.cpp:167] Error parsing json file: [json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'I'
+I 00:00:00.130380 executorch:llm_runner_helper.cpp:72] Loaded TikToken tokenizer
+I 00:00:00.130504 executorch:llm_runner_helper.cpp:258] Reading metadata from model
+I 00:00:00.137769 executorch:llm_runner_helper.cpp:137] Metadata: use_kv_cache = 1
+I 00:00:00.137829 executorch:llm_runner_helper.cpp:137] Metadata: get_max_context_len = 128
+I 00:00:00.137835 executorch:llm_runner_helper.cpp:137] Metadata: get_max_seq_len = 128
+I 00:00:00.137839 executorch:llm_runner_helper.cpp:137] Metadata: use_sdpa_with_kv_cache = 0
+I 00:00:00.137844 executorch:llm_runner_helper.cpp:137] Metadata: enable_dynamic_shape = 1
+I 00:00:00.138152 executorch:llm_runner_helper.cpp:294] Using method: forward
+I 00:00:04.682035 executorch:text_llm_runner.cpp:89] RSS after loading model: 842.332031 MiB (0 if unsupported)
+I 00:00:05.745678 executorch:text_prefiller.cpp:121] Prefill token result numel(): 128256
+I 00:00:05.746076 executorch:text_llm_runner.cpp:201] Max new tokens resolved: 64, given pos_ 41, num_prompt_tokens 41, max_context_len 128
+I 00:00:05.746115 executorch:text_llm_runner.cpp:228] RSS after prompt prefill: 842.332031 MiB (0 if unsupported)
+I 00:00:13.530270 executorch:text_llm_runner.cpp:258] RSS after finishing text generation: 842.332031 MiB (0 if unsupported)
+I 00:00:13.530293 executorch:text_llm_runner.cpp:264] Max new tokens 64 reached!
+I 00:00:13.530540 executorch:stats.h:175] 	Prompt Tokens: 41    Generated Tokens: 63
+I 00:00:13.530568 executorch:stats.h:181] 	Model Load Time:		4.544000 (seconds)
+I 00:00:13.530572 executorch:stats.h:188] 	Total inference time:		9.697000 (seconds)		 Rate: 	6.496855 (tokens/second)
+I 00:00:13.530574 executorch:stats.h:197] 		Prompt evaluation:	1.064000 (seconds)		 Rate: 	38.533835 (tokens/second)
+I 00:00:13.530577 executorch:stats.h:207] 		Generated 63 tokens:	8.633000 (seconds)		 Rate: 	7.297579 (tokens/second)
+I 00:00:13.530579 executorch:stats.h:219] 	Time to first generated token:	1.064000 (seconds)
+I 00:00:13.530581 executorch:stats.h:225] 	Sampling time over 104 tokens:	0.023000 (seconds)
+
+
+===== example 0 =====
+Explain this network event in 2 sentences.
+
+Evidence:
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-06"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-08"}
+{"verdict": "intr
+PyTorchObserver {"prefill_token_per_sec":38.5338,"decode_token_per_sec":7.29758,"prompt_tokens":41,"generated_tokens":63,"model_load_start_ms":1795341300047,"model_load_end_ms":1795341304591,"inference_start_ms":1795341304591,"inference_end_ms":1795341314288,"model_execution_start_ms":1795341314165,"model_execution_end_ms":1795341314288,"prompt_eval_end_ms":1795341305655,"first_token_ms":1795341305655,"aggregate_sampling_time_ms":23,"aggregate_model_execution_time_ms":9665,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+
+STDOUT:
+Explain this network event in 2 sentences.
+
+Evidence:
+{"verdict": "intrusion likely", "alert_type": "repeated logins to a remote service", "source_device": "device-11"}
+{"verdict": "intrusion likely", "alert_type": "repeated logins to a remote service", "source_device": "device-11"}
+{"verdict": "intrusion likely", "alert_type": "repeated logins to a remote service", "source_device": "device-11"}
+
+PyTorchObserver {"prefill_token_per_sec":44.5344,"decode_token_per_sec":8.75852,"prompt_tokens":44,"generated_tokens":63,"model_load_start_ms":1795341314463,"model_load_end_ms":1795341317952,"inference_start_ms":1795341317952,"inference_end_ms":1795341326133,"model_execution_start_ms":1795341326020,"model_execution_end_ms":1795341326132,"prompt_eval_end_ms":1795341318940,"first_token_ms":1795341318940,"aggregate_sampling_time_ms":24,"aggregate_model_execution_time_ms":8148,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+
+STDERR:
+I tokenizers:regex.cpp:40] Registering override fallback regex
+I tokenizers:regex.cpp:40] Registering override fallback regex
+I 00:00:00.001471 executorch:main.cpp:158] Resetting threadpool with num threads = 0
+I 00:00:00.001583 executorch:runner.cpp:65] Creating LLaMa runner: model_path=/home/oj123/executorch/llama32_1b_8da4w.pte, tokenizer_path=/home/oj123/models/llama32-1b/original/tokenizer.model
+E tokenizers:hf_tokenizer.cpp:167] Error parsing json file: [json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'I'
+I 00:00:00.123282 executorch:llm_runner_helper.cpp:72] Loaded TikToken tokenizer
+I 00:00:00.123390 executorch:llm_runner_helper.cpp:258] Reading metadata from model
+I 00:00:00.123740 executorch:llm_runner_helper.cpp:137] Metadata: use_kv_cache = 1
+I 00:00:00.123779 executorch:llm_runner_helper.cpp:137] Metadata: get_max_context_len = 128
+I 00:00:00.123784 executorch:llm_runner_helper.cpp:137] Metadata: get_max_seq_len = 128
+I 00:00:00.123788 executorch:llm_runner_helper.cpp:137] Metadata: use_sdpa_with_kv_cache = 0
+I 00:00:00.123792 executorch:llm_runner_helper.cpp:137] Metadata: enable_dynamic_shape = 1
+I 00:00:00.123832 executorch:llm_runner_helper.cpp:294] Using method: forward
+I 00:00:03.612262 executorch:text_llm_runner.cpp:89] RSS after loading model: 842.011719 MiB (0 if unsupported)
+I 00:00:04.600041 executorch:text_prefiller.cpp:121] Prefill token result numel(): 128256
+I 00:00:04.600415 executorch:text_llm_runner.cpp:201] Max new tokens resolved: 64, given pos_ 44, num_prompt_tokens 44, max_context_len 128
+I 00:00:04.600451 executorch:text_llm_runner.cpp:228] RSS after prompt prefill: 842.011719 MiB (0 if unsupported)
+I 00:00:11.793242 executorch:text_llm_runner.cpp:258] RSS after finishing text generation: 842.011719 MiB (0 if unsupported)
+I 00:00:11.793268 executorch:text_llm_runner.cpp:264] Max new tokens 64 reached!
+I 00:00:11.793329 executorch:stats.h:175] 	Prompt Tokens: 44    Generated Tokens: 63
+I 00:00:11.793331 executorch:stats.h:181] 	Model Load Time:		3.489000 (seconds)
+I 00:00:11.793333 executorch:stats.h:188] 	Total inference time:		8.181000 (seconds)		 Rate: 	7.700770 (tokens/second)
+I 00:00:11.793336 executorch:stats.h:197] 		Prompt evaluation:	0.988000 (seconds)		 Rate: 	44.534413 (tokens/second)
+I 00:00:11.793338 executorch:stats.h:207] 		Generated 63 tokens:	7.193000 (seconds)		 Rate: 	8.758515 (tokens/second)
+I 00:00:11.793341 executorch:stats.h:219] 	Time to first generated token:	0.988000 (seconds)
+I 00:00:11.793342 executorch:stats.h:225] 	Sampling time over 107 tokens:	0.024000 (seconds)
+
+
+===== example 1 =====
+Explain this network event in 2 sentences.
+
+Evidence:
+{"verdict": "intrusion likely", "alert_type": "repeated logins to a remote service", "source_device": "device-11"}
+{"verdict": "intrusion likely", "alert_type": "repeated logins to a remote service", "source_device": "device-11"}
+{"verdict": "intrusion likely", "alert_type": "repeated logins to a remote service", "source_device": "device-11"}
+
+PyTorchObserver {"prefill_token_per_sec":44.5344,"decode_token_per_sec":8.75852,"prompt_tokens":44,"generated_tokens":63,"model_load_start_ms":1795341314463,"model_load_end_ms":1795341317952,"inference_start_ms":1795341317952,"inference_end_ms":1795341326133,"model_execution_start_ms":1795341326020,"model_execution_end_ms":1795341326132,"prompt_eval_end_ms":1795341318940,"first_token_ms":1795341318940,"aggregate_sampling_time_ms":24,"aggregate_model_execution_time_ms":8148,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+
+STDOUT:
+Explain this network event in 2 sentences.
+
+Evidence:
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intr
+PyTorchObserver {"prefill_token_per_sec":52.6992,"decode_token_per_sec":7.87303,"prompt_tokens":41,"generated_tokens":63,"model_load_start_ms":1795341326302,"model_load_end_ms":1795341329212,"inference_start_ms":1795341329212,"inference_end_ms":1795341337992,"model_execution_start_ms":1795341337870,"model_execution_end_ms":1795341337992,"prompt_eval_end_ms":1795341329990,"first_token_ms":1795341329990,"aggregate_sampling_time_ms":22,"aggregate_model_execution_time_ms":8753,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+
+STDERR:
+I tokenizers:regex.cpp:40] Registering override fallback regex
+I tokenizers:regex.cpp:40] Registering override fallback regex
+I 00:00:00.000949 executorch:main.cpp:158] Resetting threadpool with num threads = 0
+I 00:00:00.001018 executorch:runner.cpp:65] Creating LLaMa runner: model_path=/home/oj123/executorch/llama32_1b_8da4w.pte, tokenizer_path=/home/oj123/models/llama32-1b/original/tokenizer.model
+E tokenizers:hf_tokenizer.cpp:167] Error parsing json file: [json.exception.parse_error.101] parse error at line 1, column 1: syntax error while parsing value - invalid literal; last read: 'I'
+I 00:00:00.120195 executorch:llm_runner_helper.cpp:72] Loaded TikToken tokenizer
+I 00:00:00.120326 executorch:llm_runner_helper.cpp:258] Reading metadata from model
+I 00:00:00.120690 executorch:llm_runner_helper.cpp:137] Metadata: use_kv_cache = 1
+I 00:00:00.120736 executorch:llm_runner_helper.cpp:137] Metadata: get_max_context_len = 128
+I 00:00:00.120741 executorch:llm_runner_helper.cpp:137] Metadata: get_max_seq_len = 128
+I 00:00:00.120745 executorch:llm_runner_helper.cpp:137] Metadata: use_sdpa_with_kv_cache = 0
+I 00:00:00.120749 executorch:llm_runner_helper.cpp:137] Metadata: enable_dynamic_shape = 1
+I 00:00:00.120789 executorch:llm_runner_helper.cpp:294] Using method: forward
+I 00:00:03.030602 executorch:text_llm_runner.cpp:89] RSS after loading model: 842.066406 MiB (0 if unsupported)
+I 00:00:03.808424 executorch:text_prefiller.cpp:121] Prefill token result numel(): 128256
+I 00:00:03.808855 executorch:text_llm_runner.cpp:201] Max new tokens resolved: 64, given pos_ 41, num_prompt_tokens 41, max_context_len 128
+I 00:00:03.808895 executorch:text_llm_runner.cpp:228] RSS after prompt prefill: 842.066406 MiB (0 if unsupported)
+I 00:00:11.811074 executorch:text_llm_runner.cpp:258] RSS after finishing text generation: 842.066406 MiB (0 if unsupported)
+I 00:00:11.811100 executorch:text_llm_runner.cpp:264] Max new tokens 64 reached!
+I 00:00:11.811161 executorch:stats.h:175] 	Prompt Tokens: 41    Generated Tokens: 63
+I 00:00:11.811163 executorch:stats.h:181] 	Model Load Time:		2.910000 (seconds)
+I 00:00:11.811165 executorch:stats.h:188] 	Total inference time:		8.780000 (seconds)		 Rate: 	7.175399 (tokens/second)
+I 00:00:11.811167 executorch:stats.h:197] 		Prompt evaluation:	0.778000 (seconds)		 Rate: 	52.699229 (tokens/second)
+I 00:00:11.811170 executorch:stats.h:207] 		Generated 63 tokens:	8.002000 (seconds)		 Rate: 	7.873032 (tokens/second)
+I 00:00:11.811172 executorch:stats.h:219] 	Time to first generated token:	0.778000 (seconds)
+I 00:00:11.811174 executorch:stats.h:225] 	Sampling time over 104 tokens:	0.022000 (seconds)
+
+
+===== example 2 =====
+Explain this network event in 2 sentences.
+
+Evidence:
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intrusion likely", "alert_type": "possible flood toward a host", "source_device": "device-07"}
+{"verdict": "intr
+PyTorchObserver {"prefill_token_per_sec":52.6992,"decode_token_per_sec":7.87303,"prompt_tokens":41,"generated_tokens":63,"model_load_start_ms":1795341326302,"model_load_end_ms":1795341329212,"inference_start_ms":1795341329212,"inference_end_ms":1795341337992,"model_execution_start_ms":1795341337870,"model_execution_end_ms":1795341337992,"prompt_eval_end_ms":1795341329990,"first_token_ms":1795341329990,"aggregate_sampling_time_ms":22,"aggregate_model_execution_time_ms":8753,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+

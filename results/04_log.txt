@@ -1,0 +1,32 @@
+fit rows: 905116  val rows: 231915  test rows: 1161196
+thresholds: {'clf_threshold': 4.9682021049269456e-06, 'anomaly_lo': 0.3235319147548515, 'anomaly_hi': 0.6543019260765087, 'anomaly_threshold': 0.9512319178360015}
+
+Flow-level results on held-out Thursday and Friday:
+classifier  precision=0.688  recall=0.978  false_alarm_rate=0.1485  roc_auc=0.978
+anomaly     precision=0.029  recall=0.001  false_alarm_rate=0.0146  roc_auc=0.928
+
+Detection rate per label:
+                            clf_flag  anom_flag
+Label                                          
+BENIGN                         0.148      0.015
+Bot                            0.043      0.000
+DDoS                           0.990      0.000
+Infiltration                   0.139      0.083
+PortScan                       0.981      0.002
+Web Attack  Brute Force       0.905      0.000
+Web Attack  Sql Injection     0.571      0.000
+Web Attack  XSS               0.965      0.000
+
+Flows per label in test:
+Label
+BENIGN                        870195
+PortScan                      158804
+DDoS                          128025
+Bot                             1956
+Web Attack  Brute Force        1507
+Web Attack  XSS                 652
+Infiltration                      36
+Web Attack  Sql Injection        21
+Name: count, dtype: int64
+
+Saved models and thresholds to models/

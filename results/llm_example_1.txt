@@ -1,0 +1,12 @@
+
+    Alert for device-11
+
+    Risk:
+    The alert type is repeated logins to a remote service, which is a clear indication of a potential security breach.
+
+In
+
+    Actions:
+    1. Check the device for unusual activity.
+    2. Review router/firewall logs.
+    

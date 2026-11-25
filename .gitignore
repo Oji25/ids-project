@@ -1,0 +1,23 @@
+# datasets
+data/
+
+# backups
+*.tar.gz
+
+# python
+__pycache__/
+*.pyc
+
+# virtual environments
+venv/
+venvs/
+
+# executorch artifacts
+*.pte
+
+# huggingface weights
+*.safetensors
+*.pth
+
+# logs
+*.log

@@ -1,0 +1,15 @@
+rule thresholds: {'port_scan_ports': 489.0, 'host_flood_flows': 9379.0, 'brute_force_auth': 10.0}
+
+Rule firing rate per label on test (BENIGN row = false alarm rate):
+                            rule_port_scan  ...  rule_any
+Label                                       ...          
+BENIGN                                 0.0  ...     0.042
+Bot                                    0.0  ...     0.000
+DDoS                                   0.0  ...     0.000
+Infiltration                           0.0  ...     0.139
+PortScan                               0.0  ...     0.993
+Web Attack  Brute Force               0.0  ...     0.000
+Web Attack  Sql Injection             0.0  ...     0.000
+Web Attack  XSS                       0.0  ...     0.000
+
+[8 rows x 4 columns]

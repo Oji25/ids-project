@@ -1,0 +1,42 @@
+Columns: 86
+Time range: 2017-07-04 01:00:00 to 2017-07-07 12:59:00
+
+Flow Duration (microseconds, max should be near 120,000,000):
+count      2298227.0
+mean      15816084.7
+std       34621135.3
+min            -13.0
+25%            149.0
+50%          31352.0
+75%        4622757.0
+max      119999998.0
+Name: Flow Duration, dtype: float64
+
+Flow IAT Mean (microseconds):
+count      2298227.0
+mean       1352732.6
+std        4357154.2
+min            -13.0
+25%             63.0
+50%          11934.2
+75%         413470.1
+max      120000000.0
+Name: Flow IAT Mean, dtype: float64
+
+Flow Bytes/s:
+count    2.298227e+06
+mean     1.463762e+06
+std      2.623408e+07
+min     -2.610000e+08
+25%      1.182000e+02
+50%      4.283800e+03
+75%      1.600000e+05
+max      2.070000e+09
+Name: Flow Bytes/s, dtype: float64
+
+Flag columns: ['FIN Flag Count', 'SYN Flag Count', 'RST Flag Count', 'PSH Flag Count', 'ACK Flag Count', 'URG Flag Count', 'CWE Flag Count', 'ECE Flag Count']
+
+Sample Source IPs: <ArrowStringArray>
+['104.16.207.165',  '104.16.28.216',  '104.17.241.25', '104.19.196.102',
+  '104.20.10.120']
+Length: 5, dtype: str

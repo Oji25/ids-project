@@ -1,0 +1,5 @@
+{
+  "port_scan_ports": 489.0,
+  "host_flood_flows": 9379.0,
+  "brute_force_auth": 10.0
+}

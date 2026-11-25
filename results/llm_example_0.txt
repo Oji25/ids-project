@@ -1,0 +1,10 @@
+
+    Alert for device-06
+
+    Risk:
+    The alert type is possible flood toward a host, which could lead to a denial of service attack.
+
+    Actions:
+    1. Check the device for unusual activity.
+    2. Review router/firewall logs.
+    
